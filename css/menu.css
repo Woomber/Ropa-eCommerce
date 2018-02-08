@@ -1,6 +1,6 @@
 .navbar {
-  background-color: #7a4d66;
-  margin: auto 10px;
+  background-color: var(--color-main-dark);
+  margin: auto var(--margin-vertical);
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
@@ -12,11 +12,11 @@
 }
 
 .navbar a:hover {
-  color: #7a4d66;
+  color: var(--color-main-dark);
 }
 
 .navbar a:focus {
-  color: #7a4d66;
+  color: var(--color-main-dark);
 }
 
 @media screen and (max-width: 600px) {

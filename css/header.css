@@ -6,16 +6,16 @@
 .title-head {
   font-size: 60px;
   font-family: serif;
-  padding-left: 12px;
-  color: #7a4d66;
+  padding-left: var(--margin-horizontal);
+  color: var(--color-main-dark);
 }
 
 .title-right {
   margin-left: auto;
   margin-top: auto;
-  color: #1a9c99;
+  color: var(--color-accent);
   font-size: 20px;
-  padding-right: 12px;
+  padding-right: var(--margin-horizontal);
 }
 
 .title-right a {

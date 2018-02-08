@@ -3,8 +3,8 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #7a4d66;
+  background-color: var(--color-main-dark);
   color: white;
   text-align: center;
-  padding-top: 10px;
+  padding-top: var(--margin-vertical);
 }

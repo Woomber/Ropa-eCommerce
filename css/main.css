@@ -7,6 +7,28 @@ Colores
 #7a4d66
 */
 
+:root {
+  --color-main-dark: #7a4d66;
+  --color-background: #bca3ba;
+  --color-main-light:#90678c;
+  --color-accent: #1a9c99;
+
+  --margin-horizontal: 2%;
+  --margin-vertical: 10px;
+}
+
 body {
-  background-color: #bca3ba;
+  background-color: var(--color-background);
+}
+
+#imgCarousel {
+  margin: auto;
+  width: 95%;
+  height: 50%;
+  overflow: hidden;
+}
+
+#imgCarousel img {
+  width: 100%;
+  overflow: hidden;
 }
