@@ -1,0 +1,19 @@
+/*
+Colores
+#d08888
+#ff8fa6
+#1a9c99
+#90678c
+#7a4d66
+*/
+
+h1.title-head {
+  font-size: 60dp;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
