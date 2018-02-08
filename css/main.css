@@ -7,13 +7,6 @@ Colores
 #7a4d66
 */
 
-h1.title-head {
-  font-size: 60dp;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+body {
+  background-color: #bca3ba;
 }

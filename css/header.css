@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title-head {
+  font-size: 60px;
+  font-family: serif;
+  padding-left: 12px;
+  color: #7a4d66;
+}
+
+.title-right {
+  margin-left: auto;
+  margin-top: auto;
+  color: #1a9c99;
+  font-size: 20px;
+  padding-right: 12px;
+}
+
+.title-right a {
+  color: white;
+  font-size: 16px;
+}

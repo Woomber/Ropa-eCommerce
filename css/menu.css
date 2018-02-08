@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #7a4d66;
+  margin: auto 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar a:hover {
+  color: #7a4d66;
+}
+
+.navbar a:focus {
+  color: #7a4d66;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 0px;
+    display: block;
+    text-align: center;
+  }
+  .navbar li {
+    width: 100%;
+  }
+}
