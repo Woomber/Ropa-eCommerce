@@ -8,6 +8,7 @@
   font-family: serif;
   padding-left: var(--margin-horizontal);
   color: var(--color-main-dark);
+  margin: 10px 0px 10px 0px;
 }
 
 .title-right {

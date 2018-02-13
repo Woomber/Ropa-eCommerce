@@ -57,6 +57,29 @@
     // Activate Carousel
     $("#imgCarousel").carousel();
     </script>
+
+     <div id="articulos">
+      <div class="contenido">
+        <div class="imagen"><img src=""></div>
+        <div class="texto"><p>Un articulo</p></div>
+      </div>
+
+       <div class="contenido">
+        <div class="imagen"><img src=""></div>
+        <div class="texto"><p>Un articulo</p></div>
+      </div>
+
+       <div class="contenido">
+        <div class="imagen"><img src=""></div>
+        <div class="texto"><p>Un articulo</p></div>
+      </div>
+
+       <div class="contenido">
+        <div class="imagen"><img src=""></div>
+        <div class="texto"><p>Un articulo</p></div>
+      </div>
+    </div>
+
     <?php include 'html/footer.html' ?>
   </body>
 </html>

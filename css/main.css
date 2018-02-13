@@ -32,3 +32,24 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
+#articulos{
+  width: 90%;
+  margin: 10px 5% 0px 4%;
+}
+#articulos .texto{
+  width: 150px;
+  text-align: center;
+}
+#articulos .contenido{
+  display: inline-block;
+  float: left;
+  width: 150px;
+  height: 140px;
+  background-color: white;
+  margin-left: 20px;
+}
+#articulos .imagen{
+  width: 150px;
+  height: 90px;
+}
