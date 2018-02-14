@@ -1,0 +1,142 @@
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#imagen1 {
+  background: url('../img/blusablanca.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+#imagen2 {
+    background: url('../img/pantalon.png');
+    background-size: cover;
+  background-position: center center;
+}
+
+#imagen3 {
+    background: url('../img/vestidoblanco.png');
+    background-size: cover;
+  background-position: center center;
+}
+
+#imagen4 {
+    background: url('../img/vestidoamarillo.png');
+    background-size: cover;
+  background-position: center center;
+}
+
+#imagen5 {
+    background: url('../img/kimono.png');
+    background-size: cover;
+  background-position: center center;
+}
+#imagen6 {
+    background: url('../img/shortrojo.png');
+    background-size: cover;
+  background-position: center center;
+}
+
+#imagen7 {
+    background: url('../img/blusarosa.png');
+    background-size: cover;
+  background-position: center center;
+}
+
+#imagen8 {
+    background: url('../img/overol.png');
+    background-size: cover;
+  background-position: center center;
+}
+
+#imagen9 {
+    background: url('../img/blusaflores.png');
+    background-size: cover;
+  background-position: center center;
+}
+
+#imagen10 {
+    background: url('../img/shortazul.png');
+    background-size: cover;
+  background-position: center center;
+}
+.tendencias{
+  margin-left: 20px;
+}
+
+.container{
+  position: relative;
+  box-sizing: border-box;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom:20px;
+}
+
+.container a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.container .overlay {
+  background: rgba(0,0,0,0.4);
+  position: absolute;
+  margin: auto;
+  width: 0px;
+  height: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  
+  opacity: 0;
+  
+  -webkit-transition: .4s ease;
+  transition: .4s ease;
+  
+}
+
+.container span {
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  margin: auto;
+  width: 200px;
+  height: 30px;
+  line-height: 30px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: transform .5s ease, opacity .7s ease;
+  transition: transform .5s ease, opacity .7s ease;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.container:hover span {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: transform .5s ease, opacity 1.3s ease;
+  transition: transform .5s ease, opacity 1.3s ease;
+}

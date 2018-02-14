@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -58,27 +59,7 @@
     $("#imgCarousel").carousel();
     </script>
 
-     <div id="articulos">
-      <div class="contenido">
-        <div class="imagen"><img src=""></div>
-        <div class="texto"><p>Un articulo</p></div>
-      </div>
-
-       <div class="contenido">
-        <div class="imagen"><img src=""></div>
-        <div class="texto"><p>Un articulo</p></div>
-      </div>
-
-       <div class="contenido">
-        <div class="imagen"><img src=""></div>
-        <div class="texto"><p>Un articulo</p></div>
-      </div>
-
-       <div class="contenido">
-        <div class="imagen"><img src=""></div>
-        <div class="texto"><p>Un articulo</p></div>
-      </div>
-    </div>
+<?php include 'html/buttons.html' ?>
 
     <?php include 'html/footer.html' ?>
   </body>
