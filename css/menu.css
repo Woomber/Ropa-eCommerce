@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 52px;
+  
 }
 
 .navbar a {
@@ -47,7 +47,7 @@ dt:hover{
 }
 li:hover .sub1 {left:0; top:20px; display:block;z-index:100;}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .navbar {
     padding: 0px;
     display: block;
@@ -56,4 +56,10 @@ li:hover .sub1 {left:0; top:20px; display:block;z-index:100;}
   .navbar li {
     width: 100%;
   }
+
+	li:hover .sub1  {
+	display:none;
+}
+
+
 }
