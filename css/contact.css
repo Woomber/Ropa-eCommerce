@@ -1,0 +1,35 @@
+#contact{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+#contact-form {
+  margin: auto;
+
+}
+
+.btn {
+  margin-right: 12px;
+}
+
+.controls .row {
+  margin: auto;
+}
+
+.status {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-main-dark);
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.status a{
+  color: var(--color-accent);
+}
