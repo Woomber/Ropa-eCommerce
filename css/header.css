@@ -7,8 +7,16 @@
   font-size: 60px;
   font-family: serif;
   padding-left: var(--margin-horizontal);
-  color: var(--color-main-dark);
   margin: 10px 0px 10px 0px;
+}
+
+.title-head a {
+  color: var(--color-main-dark);
+
+}
+
+.title-head a:hover {
+  text-decoration: none;
 }
 
 .title-right {
