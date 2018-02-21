@@ -1,18 +1,31 @@
 #map {
-    width: 100%;
-    height: 250px;
+    width: 45%;
+    height: 350px;
+    margin: auto;
 }
 
 #contact{
   display: flex;
   margin: auto;
-  width: 100%;
+  width: 45%;
   margin-bottom: 48px;
 }
 
 #contact-form {
   margin: auto;
+  width: 100%;
+}
 
+.contact-title {
+  color: var(--color-main-dark);
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
 }
 
 .btn {
