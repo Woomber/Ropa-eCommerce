@@ -1,15 +1,29 @@
 #map {
     width: 45%;
-    height: 350px;
+    height: 380px;
     margin: auto;
+    margin-top: 0px;
 }
 
 #contact{
   display: flex;
   margin: auto;
   width: 45%;
-  margin-bottom: 48px;
+  margin-bottom: 64px;
 }
+
+
+@media screen and (max-width: 768px) {
+	#map {
+		width: 90%;
+	}
+
+	#contact {
+		padding-top: 20px;
+		width: 90%;
+	}
+}
+
 
 #contact-form {
   margin: auto;
@@ -18,6 +32,7 @@
 
 .contact-title {
   color: var(--color-main-dark);
+  margin-left: 24px;
 }
 
 .contact-container {

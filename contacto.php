@@ -22,7 +22,7 @@
     <?php include 'html/header.html' ?>
     <?php include 'html/menu.html' ?>
 
-    <h2 class="contact-title">Contacto</h2>
+    <h1 class="contact-title">Contacto</h1>
     <div class="contact-container">
       <div id="map"></div>
 
