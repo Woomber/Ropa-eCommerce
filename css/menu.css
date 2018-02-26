@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
+
 }
 
 .navbar a {
@@ -23,7 +23,7 @@
 .sub1{
   margin-top: 30px;
   display: none;
-  width:150px;
+  width: 150px;
   position: absolute;
   background-color: #eeeeee;
   padding-left: 15px;
@@ -33,19 +33,32 @@
 .sub1 dl {
   width:150px;
 }
-dt{
-  display:block; 
-  padding:5px 0 5px 0; 
-  margin:0; 
-  color:var(--color-main-dark); 
-  font-size:0.8em; 
+.sub1 dt {
+  display:block;
+  padding:5px 0 5px 0;
+  margin:0;
+  color:var(--color-main-dark);
+  font-size:0.8em;
   line-height:20px;
 }
-dt:hover{
+
+
+.sub1 dt a {
+  color: var(--color-main-dark);
+}
+
+.sub1 dt a:hover {
   color: var(--color-accent);
+  text-decoration: none;
   cursor: pointer;
 }
-li:hover .sub1 {left:0; top:20px; display:block;z-index:100;}
+
+li:hover .sub1 {
+  left:0;
+  top:20px;
+  display:block;
+  z-index:100;
+}
 
 @media screen and (max-width: 768px) {
   .navbar {
@@ -58,8 +71,7 @@ li:hover .sub1 {left:0; top:20px; display:block;z-index:100;}
   }
 
 	li:hover .sub1  {
-	display:none;
-}
-
+  	display:none;
+  }
 
 }

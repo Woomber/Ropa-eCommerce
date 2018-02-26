@@ -24,6 +24,7 @@
   margin-top: auto;
   color: var(--color-accent);
   font-size: 20px;
+  padding-left: var(--margin-horizontal);
   padding-right: var(--margin-horizontal);
 }
 
