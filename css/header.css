@@ -21,6 +21,7 @@
 
 .title-right {
   margin-left: auto;
+  white-space: nowrap;
   margin-top: auto;
   color: var(--color-accent);
   font-size: 20px;
