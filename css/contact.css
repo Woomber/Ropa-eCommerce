@@ -1,5 +1,5 @@
 #map {
-    width: 70%;
+    width: 45%;
     height: 380px;
     margin: auto;
     margin-top: 0px;
@@ -8,8 +8,8 @@
 #contact{
   display: flex;
   margin: auto;
-  width: 55%;
-  margin-bottom: 100px;
+  width: 45%;
+  margin-bottom: 64px;
 }
 
 
@@ -32,14 +32,8 @@
 
 .contact-title {
   color: var(--color-main-dark);
-  margin-left: 60px;
+  margin-left: 24px;
 }
-
-.findus-title {
-  color: var(--color-main-dark);
-  margin-left: 60px;
-}
-
 
 .contact-container {
   width: 100%;

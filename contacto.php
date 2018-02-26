@@ -22,12 +22,10 @@
     <?php include 'html/header.html' ?>
     <?php include 'html/menu.html' ?>
 
-    <h1 class="findus-title">Tiendas</h1>
+    <h1 class="contact-title">Contacto</h1>
     <div class="contact-container">
       <div id="map"></div>
-      </div>
-      <div>
-    <h1 class="contact-title">Contacto</h1>
+
       <?php include 'html/contactform.html' ?>
     </div>
     <?php include 'html/footer.html' ?>
