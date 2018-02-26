@@ -19,6 +19,18 @@
   text-decoration: none;
 }
 
+.title-head a::selection {
+  text-decoration: none;
+}
+
+.title-head a:focus {
+  text-decoration: none;
+}
+
+.title-head a:active {
+  text-decoration: none;
+}
+
 .title-right {
   margin-left: auto;
   white-space: nowrap;
