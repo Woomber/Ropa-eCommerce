@@ -12,6 +12,8 @@
   color: white;
 }
 
+
+
 .navbar a:hover {
   color: var(--color-main-dark);
 }
@@ -58,6 +60,14 @@ li:hover .sub1 {
   top:20px;
   display:block;
   z-index:100;
+}
+li.hovered a {
+    background-color: #eeeeee;
+  color: var(--color-main-dark);
+}
+
+li.hovered a {
+  color: var(--color-main-dark);
 }
 
 @media screen and (max-width: 768px) {
