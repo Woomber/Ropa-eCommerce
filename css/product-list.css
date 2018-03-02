@@ -2,3 +2,41 @@
   color: var(--color-main-dark);
   margin-left: 24px;
 }
+
+.imagen img{
+	width: 450px;
+	height: 500px;
+	display: inline-block;
+	float: left;
+	margin-left: 5%;
+	margin-bottom: 60px;
+}
+.contenido{
+	display: inline-block;
+	float: left;
+	margin-left: 15px;
+	width: 50%;
+}
+.contenido p{
+	font-size: 20px;
+}
+.descripcion{
+	margin:25px 0px;
+}
+button{
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+	border:none;
+	font-size: 20px;
+	margin-top: 25px;
+}
+button:hover{
+	background-color: var(--color-accent);
+}
+
+@media screen and (max-width: 515px) {
+  .contenido {
+    width: 30%;
+  } 
+}
