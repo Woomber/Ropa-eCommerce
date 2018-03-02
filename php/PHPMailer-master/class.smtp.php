@@ -141,14 +141,14 @@ class SMTP
      * @link http://tools.ietf.org/html/rfc2821#section-4.5.3.2
      * @var integer
      */
-    public $Timeout = 300;
+    public $Timeout = 1200;
 
     /**
      * How long to wait for commands to complete, in seconds.
      * Default of 5 minutes (300sec) is from RFC2821 section 4.5.3.2
      * @var integer
      */
-    public $Timelimit = 300;
+    public $Timelimit = 1200;
 
     /**
      * @var array patterns to extract smtp transaction id from smtp reply

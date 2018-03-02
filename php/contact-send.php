@@ -57,6 +57,7 @@ $fields = array('name' => 'Name', 'email' => 'Email', 'phone' => 'Phone', 'messa
      $mail->Password = $smtpPassword;
      $mail->setFrom($fromEmail, $fromName);
      $mail->addAddress($sendToEmail, $sendToName);
+     $mail->addAddress($_POST["email"], $_POST["name"]);
      $mail->isHTML(false);
      $mail->Subject = $subject;
      $mail->Body = $emailText;
