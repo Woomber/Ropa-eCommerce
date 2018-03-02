@@ -2,41 +2,35 @@
   color: var(--color-main-dark);
   margin-left: 24px;
 }
-
-.imagen img{
-	width: 450px;
-	height: 500px;
+#productos{
 	display: inline-block;
-	float: left;
 	margin-left: 5%;
-	margin-bottom: 60px;
+	width: 100%;
+	height: auto;
 }
-.contenido{
+.producto img{
+	height: 230px;
+	width: 210px;
+	float: left;
+	display: inline-block;
+}
+.producto .info{
 	display: inline-block;
 	float: left;
-	margin-left: 15px;
-	width: 50%;
+	height: auto;
+	margin-left: 10px;
 }
-.contenido p{
+.producto .precio p, .producto .tallas p, .producto .marca p{	
+	margin: 0px;
 	font-size: 20px;
+	font-family: sans-serif;
 }
-.descripcion{
-	margin:25px 0px;
-}
-button{
-	width: 100px;
-	height: 50px;
-	border-radius: 5px;
-	border:none;
-	font-size: 20px;
-	margin-top: 25px;
-}
-button:hover{
-	background-color: var(--color-accent);
-}
-
-@media screen and (max-width: 515px) {
-  .contenido {
-    width: 30%;
-  } 
+.producto .tallas p{	margin-bottom: 10px;}
+.producto{
+	background-color: var(--color-bar);
+	display: inline-block;
+	float: left;
+	width: 85%;
+	margin-bottom: 25px;
+	cursor:pointer;
 }

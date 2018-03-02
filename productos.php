@@ -20,16 +20,61 @@
     <?php include 'html/header.html' ?>
     <?php include 'html/menu.html' ?>
     <?php require 'php/productos-filter.php' ?>
-    <?php include 'html/emergentes.html' ?>
 
     <h1 id="category-title"><?php echo $cat_title; ?></h1>
 
-        <div class="imagen"><img src="img/blusablanca.png"></div>
-        <div class="contenido">
-            <div class="titulo"><h2>ejem</h2></div>
-            <div class="descripcion"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
-            <div class="precio"><p>Precio: $123456.7890</p></div>
-            <button onclick="popup(1,'seguro')">Comprar</button>
+        <div id="productos">
+            <div class="producto">
+                <img src="img/blusablanca.png">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>Titulo de algo</h2>
+                    </div>
+                    <div class="marca">
+                        <p>marca x</p>
+                    </div>
+                    <div class="tallas">
+                        <p>Tallas: ch, m, g</p>
+                    </div>
+                    <div class="precio">
+                        <p>$15.20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="img/blusablanca.png">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>Titulo de algo</h2>
+                    </div>
+                    <div class="marca">
+                        <p>marca x</p>
+                    </div>
+                    <div class="tallas">
+                        <p>Tallas: ch, m, g</p>
+                    </div>
+                    <div class="precio">
+                        <p>$15.20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="producto">
+                <img src="img/blusablanca.png">
+                <div class="info">
+                    <div class="titulo">
+                        <h2>Titulo de algo</h2>
+                    </div>
+                    <div class="marca">
+                        <p>marca x</p>
+                    </div>
+                    <div class="tallas">
+                        <p>Tallas: ch, m, g</p>
+                    </div>
+                    <div class="precio">
+                        <p>$15.20</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     <?php include 'html/footer.html' ?>
