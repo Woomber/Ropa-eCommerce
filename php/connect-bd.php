@@ -7,15 +7,32 @@
   $mysql_bd   = 'id4661080_proyectodb';
 
   $mysqli = new mysqli($mysql_host, $mysql_user, $mysql_pass, $mysql_bd);
+  $mysqli->set_charset("UTF8");
   if($mysqli->connect_errno){
     echo "Error en la conexión.";
     exit;
   }
 
+  function findByProduct($id){
+    global $mysqli;
+    $sql = "SELECT productos.*, marcas.nombre as marca FROM productos
+    INNER JOIN marcas ON marcas.id = productos.id_marca
+    WHERE productos.id = $id";
+
+    if(!$resultado = $mysqli->query($sql)){
+      echo "Error al consultar.";
+      exit;
+    }
+
+    return $resultado->fetch_assoc();
+  
+  }
+
 function findByCategory($id){
   global $mysqli;
-  $sql = "SELECT id_categoria, productos.* FROM categorias_productos
+  $sql = "SELECT id_categoria, productos.*, marcas.nombre as marca FROM categorias_productos
   LEFT JOIN productos ON categorias_productos.id_producto = productos.id
+  INNER JOIN marcas ON marcas.id = productos.id_marca
   WHERE id_categoria = $id";
 
   if(!$resultado = $mysqli->query($sql)){

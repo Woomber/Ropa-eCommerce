@@ -4,10 +4,27 @@
 }
 #productos{
 	display: inline-block;
+  margin-top: 20px;
+  margin-right: 5%;
 	margin-left: 5%;
-	width: 100%;
+	width: 90%;
 	height: auto;
+  margin-bottom: 30px;
 }
+
+.link-elem {
+  color: var(--color-main-dark);
+}
+
+.link-elem:hover {
+  color: var(--color-main-dark);
+    text-decoration: none;
+}
+
+a:hover #productos {
+
+}
+
 .producto img{
 	height: 230px;
 	width: 210px;
@@ -16,21 +33,29 @@
 }
 .producto .info{
 	display: inline-block;
-	float: left;
+
 	height: auto;
 	margin-left: 10px;
 }
-.producto .precio p, .producto .tallas p, .producto .marca p{	
+.producto .precio p, .producto .desc p, .producto .marca p{
 	margin: 0px;
+  margin-bottom: 10px;
 	font-size: 20px;
 	font-family: sans-serif;
 }
-.producto .tallas p{	margin-bottom: 10px;}
-.producto{
+.producto .precio p {
+  font-size: 26px;
+}
+
+.producto .titulo h2 {
+  font-weight: bold;
+}
+
+.producto {
 	background-color: var(--color-bar);
-	display: inline-block;
+	display: block;
 	float: left;
-	width: 85%;
+	width: 100%;
 	margin-bottom: 25px;
 	cursor:pointer;
 }

@@ -24,57 +24,10 @@
     <h1 id="category-title"><?php echo $cat_title; ?></h1>
 
         <div id="productos">
-            <div class="producto">
-                <img src="img/blusablanca.png">
-                <div class="info">
-                    <div class="titulo">
-                        <h2>Titulo de algo</h2>
-                    </div>
-                    <div class="marca">
-                        <p>marca x</p>
-                    </div>
-                    <div class="tallas">
-                        <p>Tallas: ch, m, g</p>
-                    </div>
-                    <div class="precio">
-                        <p>$15.20</p>
-                    </div>
-                </div>
-            </div>
-            <div class="producto">
-                <img src="img/blusablanca.png">
-                <div class="info">
-                    <div class="titulo">
-                        <h2>Titulo de algo</h2>
-                    </div>
-                    <div class="marca">
-                        <p>marca x</p>
-                    </div>
-                    <div class="tallas">
-                        <p>Tallas: ch, m, g</p>
-                    </div>
-                    <div class="precio">
-                        <p>$15.20</p>
-                    </div>
-                </div>
-            </div>
-            <div class="producto">
-                <img src="img/blusablanca.png">
-                <div class="info">
-                    <div class="titulo">
-                        <h2>Titulo de algo</h2>
-                    </div>
-                    <div class="marca">
-                        <p>marca x</p>
-                    </div>
-                    <div class="tallas">
-                        <p>Tallas: ch, m, g</p>
-                    </div>
-                    <div class="precio">
-                        <p>$15.20</p>
-                    </div>
-                </div>
-            </div>
+            <?php
+              require 'php/build-product.php';
+              buildByCategory($cat);
+             ?>
         </div>
 
     <?php include 'html/footer.html' ?>

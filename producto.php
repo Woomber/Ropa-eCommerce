@@ -19,18 +19,13 @@
   <body>
     <?php include 'html/header.html' ?>
     <?php include 'html/menu.html' ?>
-    <?php require 'php/productos-filter.php' ?>
+    <?php require 'php/producto-individual-filter.php' ?>
     <?php include 'html/emergentes.html' ?>
 
-    <h1 id="category-title"><?php echo $cat_title; ?></h1>
-
-        <div class="imagen"><img src="img/blusablanca.png"></div>
-        <div class="contenido">
-            <div class="titulo"><h2>ejem</h2></div>
-            <div class="descripcion"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
-            <div class="precio"><p>Precio: $123456.7890</p></div>
-            <button onclick="popup(1,'seguro')">Comprar</button>
-        </div>
+    <?php
+    require 'php/build-product.php';
+    buildByProduct($prod_id);
+    ?>
 
     <?php include 'html/footer.html' ?>
   </body>
