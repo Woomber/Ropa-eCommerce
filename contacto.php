@@ -19,7 +19,7 @@
 
     </head>
   <body>
-    <?php include 'html/header.html' ?>
+    <?php include 'php/header.php' ?>
     <?php include 'html/menu.html' ?>
 
     <h1 class="contact-title">Contacto</h1>

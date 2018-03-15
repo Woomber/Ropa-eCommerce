@@ -18,7 +18,7 @@
 </head>
 <body>
     <?php
-        include("html/header.html");
+        include("php/header.php");
         include("html/menu.html");    
     ?>
     

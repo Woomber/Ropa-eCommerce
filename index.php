@@ -17,7 +17,7 @@
 
     </head>
   <body>
-    <?php include 'html/header.html' ?>
+    <?php include 'php/header.php' ?>
     <?php include 'html/menu.html' ?>
 
     <div id="imgCarousel" class="carousel slide" data-ride="carousel">

@@ -17,7 +17,7 @@
 
     </head>
   <body>
-    <?php include 'html/header.html' ?>
+    <?php include 'php/header.php' ?>
     <?php include 'html/menu.html' ?>
     <?php require 'php/producto-individual-filter.php' ?>
     <?php include 'html/emergentes.html' ?>

@@ -1,10 +1,7 @@
 <?php
-session_start();
-?>
-
-<?php
 	require('connect-bd.php');
 	if(comprobar($_POST['usuario'],$_POST['contrasena'])){
+		session_start();
 		$_SESSION['loggedin'] = true;
     	$_SESSION['username'] = $_POST['usuario'];
 
