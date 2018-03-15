@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php @session_start(); ?>
 <div class="header">
   <h1 class="title-head"><a href="index.php">Pellier</a></h1>
   <p class="title-right">

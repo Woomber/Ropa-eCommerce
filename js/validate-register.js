@@ -34,6 +34,10 @@ function validateForm1(){
             + form["tarjeta3"].value + form["tarjeta4"].value;
     if(cc.length == 16){
         if (cc.substr(0, 1) == "4" || cc.substr(0, 1) == "5"){
+            if(!validateCardNumber(cc)) {
+                alert("Tarjeta inválida");
+                return false;
+            }
             // visa o mastercard
         } else {
             alert("Tarjeta inválida");

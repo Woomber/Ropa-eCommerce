@@ -81,7 +81,7 @@ $tel, $email, $rfc, $razon, $tipo){
     "'". $razon . "', ".
     $tipo . ")";
 
-  $mysqli->query($sql);
+  return $mysqli->query($sql) === TRUE;  
 
 }
 
@@ -95,7 +95,7 @@ function sendCCInfo($usr, $num, $cvv, $mm, $yy){
     "'". $mm . "', ".
     "'". $yy . "')";
 
-  $mysqli->query($sql);
+   return $mysqli->query($sql) === TRUE;  
 }
 
 function sendDireccionInfo($usr, $fact, $calle, $nint, $next,
@@ -113,11 +113,12 @@ $colonia, $ciudad, $edo, $cp){
     "'". $edo . "', ".
     "'". $cp . "')";
 
-  $mysqli->query($sql);
+   return $mysqli->query($sql) === TRUE;
 }
 
 function sqlClose(){
   global $mysqli;
+  $mysqli->query("commit");
   $mysqli->close();
 }
 

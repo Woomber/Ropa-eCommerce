@@ -2,13 +2,17 @@
 
     require("connect-bd.php");
 
+    if(!@isset($_POST["usuario"])){
+        header("Location: ../login.php");
+    }
+
     if(userExists($_POST["usuario"])){
         die("Ese usuario ya existe :c");
     }
         
     sendClientInfo(
         $_POST["usuario"],
-        $_POST["contrasena"],
+        hash("sha256", $_POST["contrasena"]),
         $_POST["nombre"],
         $_POST["apellidoP"],
         $_POST["apellidoM"],
@@ -16,8 +20,8 @@
         $_POST["email"],
         $_POST["rfc"],
         $_POST["razonSocial"],
-        $_POST["tipoPersona"] == "fisica"
-    );
+        ($_POST["tipoPersona"] == "fisica")? 1 : 0
+    ) or die("Error de conexión con la base de datos 1");
     
     sendCCInfo(
         $_POST["usuario"],
@@ -25,7 +29,7 @@
         $_POST["cav"],
         substr($_POST["fechaEx"], 0, 2),
         substr($_POST["fechaEx"], 3, 2)
-    );
+    ) or die("Error de conexión con la base de datos 2");
 
     if(isset($_POST["calleF"])){
         sendDireccionInfo(
@@ -38,7 +42,7 @@
             $_POST["ciudad"],
             $_POST["estado"],
             $_POST["cp"]
-        );
+        ) or die("Error de conexión con la base de datos 3");
         sendDireccionInfo(
             $_POST["usuario"],
             1,
@@ -49,7 +53,7 @@
             $_POST["ciudadF"],
             $_POST["estadoF"],
             $_POST["cpF"]
-        );
+        ) or die("Error de conexión con la base de datos 4");
         
     } else {
         sendDireccionInfo(
@@ -62,7 +66,7 @@
             $_POST["ciudad"],
             $_POST["estado"],
             $_POST["cp"]
-        );
+        ) or die("Error de conexión con la base de datos 5");
     }
 
     sqlClose();
