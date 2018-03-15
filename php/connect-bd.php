@@ -88,7 +88,7 @@ $tel, $email, $rfc, $razon, $tipo){
 function sendCCInfo($usr, $num, $cvv, $mm, $yy){
   global $mysqli;
   
-  $sql = "INSERT INTO clientes VALUES (" .
+  $sql = "INSERT INTO tarjeta VALUES (" .
     "'". $usr . "', ".
     "'". $num . "', ".
     "'". $cvv . "', ".
@@ -102,7 +102,7 @@ function sendDireccionInfo($usr, $fact, $calle, $nint, $next,
 $colonia, $ciudad, $edo, $cp){
   global $mysqli;
   
-  $sql = "INSERT INTO clientes VALUES (" .
+  $sql = "INSERT INTO direcciones VALUES (" .
     "'". $usr . "', ".
     $fact . ", ".
     "'". $calle . "', ".

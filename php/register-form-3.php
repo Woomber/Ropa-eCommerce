@@ -27,7 +27,7 @@
                 <input type="text" name="calleF" required="required">
                 <p>Número Int. *</p>
                 <input type="text" name="numIntF" required="required">
-                <p>Número Ext.</p>
+                <p>Número Ext. *</p>
                 <input type="text" name="numExtF" required="required">
                 <p>Colonia *</p>
                 <input type="text" name="coloniaF" required="required">

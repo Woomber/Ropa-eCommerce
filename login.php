@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<?php
+    session_start();
+    if (@$_SESSION['loggedin'] == true) { 
+        header("Location: index.php");
+    }
+?>
 <html>
 <head>
 	<meta charset="utf-8"/>

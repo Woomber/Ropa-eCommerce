@@ -12,8 +12,8 @@
             <input type="text" name="calle" required="required">
             <p>Número Int. *</p>
             <input type="text" name="numInt" required="required">
-            <p>Número Ext.</p>
-            <input type="text" name="numExt">
+            <p>Número Ext. *</p>
+            <input type="text" name="numExt" required="required">
              <p>Colonia *</p>
             <input type="text" name="colonia" required="required">
              <p>Ciudad/Municipio *</p>

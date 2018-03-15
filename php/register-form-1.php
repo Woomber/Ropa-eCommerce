@@ -21,13 +21,17 @@
             <p>Confirmar email *</p>
             <input type="text" name="confirmar" required="required" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.com]+[.mx]">
         </div>
+        <div class="datosTelefono">
+            <p>Teléfono *</p>
+            <input type="text" name="telefono" required="required" pattern="[0-9]{7-10}" maxlength=10>
+        </div>
         <div class="datosTarjeta">
             <p>Tarjeta *</p>
             <input type=text name="tarjeta1" required="required" size="3" pattern="[0-9]{4}" maxlength=4>
             <input type=text name="tarjeta2" required="required" size="3" pattern="[0-9]{4}" maxlength=4>
             <input type=text name="tarjeta3" required="required" size="3" pattern="[0-9]{4}" maxlength=4>
             <input type=text name="tarjeta4" required="required" size="3" pattern="[0-9]{3,4}" maxlength=4>
-            <p>CCV *</p>
+            <p>CVV *</p>
             <input type=text pattern="[0-9]{3}" name="cav" required="required" size="2" maxlength=3>
             <p>Fecha de expiración *</p>
             <input type="text" name="fechaEx" required="required" pattern="[0-9]{2}/[0-9]{2}" size="5" maxlength="5" placeholder="mm/aa">
