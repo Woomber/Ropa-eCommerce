@@ -11,7 +11,7 @@
 
         <div class="datosFacturar">
             <p>RFC *</p>
-            <input type="text" name="rfc" pattern="[A-Z]{3,4}[0-9]{6}[A-Z0-9]{3}" required="required" maxlength=13>
+            <input type="text" name="rfc" size="13" pattern="[A-Z]{3,4}[0-9]{6}[A-Z0-9]{3}" required="required" maxlength=13>
             <p>Razón Social *</p>
             <input type="text" name="razonSocial" required="required">
             <p>Tipo persona</p>
@@ -36,7 +36,7 @@
                 <p>Estado *</p>
                 <input type="text" name="estadoF" required="required">
                 <p>Código Postal *</p>
-                <input type="text" name="cpF" pattern="[0-9]{5}" required="required" maxlength=5>
+                <input type="text" name="cpF" pattern="[0-9]{5}" required="required" maxlength=5 size="5">
             </div>
         <?php
         } //if

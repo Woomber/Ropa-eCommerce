@@ -21,7 +21,7 @@
              <p>Estado *</p>
             <input type="text" name="estado" required="required">
              <p>Código Postal *</p>
-            <input type="text" name="cp" pattern="[0-9]{5}" required="required" maxlength=5>
+            <input type="text" name="cp" pattern="[0-9]{5}" required="required" maxlength=5 size="5">
         </div>
         <div class="datosCheckFactura">
             <input type="checkbox" name="facturar" value="facturar">

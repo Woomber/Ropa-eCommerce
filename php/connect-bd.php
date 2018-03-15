@@ -1,9 +1,9 @@
 <?php
 
   $mysql_host = 'localhost';
-  $mysql_user = 'id4661080_root';
-  $mysql_pass = 'gatitos321';
-  $mysql_bd   = 'id4661080_proyectodb';
+  $mysql_user = 'root';
+  $mysql_pass = '';
+  $mysql_bd   = 'pellier';
 
   $mysqli = new mysqli($mysql_host, $mysql_user, $mysql_pass, $mysql_bd);
   $mysqli->set_charset("UTF8");
@@ -53,6 +53,69 @@ function comprobar($usuario, $contrasena){
   }
   else return $resultado->fetch_assoc();
 }
+
+function userExists($usr){
+  global $mysqli;
+  $sql = "SELECT Nombre_Usuario FROM clientes WHERE Nombre_Usuario = '" . $usr . "'";
+  $resultado = $mysqli->query($sql);
+  $row_cnt = $resultado->num_rows;
+  if($row_cnt==0){
+    return false;
+  }
+  else return $resultado->fetch_assoc();
+}
+
+function sendClientInfo($usr, $pwd, $nombre, $ap, $am, 
+$tel, $email, $rfc, $razon, $tipo){
+  global $mysqli;
+
+  $sql = "INSERT INTO clientes VALUES (" .
+    "'". $usr . "', ".
+    "'". $nombre . "', ".
+    "'". $ap . "', ".
+    "'". $am . "', ".
+    "'". $tel . "', ".
+    "'". $email . "', ".
+    "'". $pwd . "', ".
+    "'". $rfc . "', ".
+    "'". $razon . "', ".
+    $tipo . ")";
+
+  $mysqli->query($sql);
+
+}
+
+function sendCCInfo($usr, $num, $cvv, $mm, $yy){
+  global $mysqli;
+  
+  $sql = "INSERT INTO clientes VALUES (" .
+    "'". $usr . "', ".
+    "'". $num . "', ".
+    "'". $cvv . "', ".
+    "'". $mm . "', ".
+    "'". $yy . "')";
+
+  $mysqli->query($sql);
+}
+
+function sendDireccionInfo($usr, $fact, $calle, $nint, $next,
+$colonia, $ciudad, $edo, $cp){
+  global $mysqli;
+  
+  $sql = "INSERT INTO clientes VALUES (" .
+    "'". $usr . "', ".
+    $fact . ", ".
+    "'". $calle . "', ".
+    "'". $nint . "', ".
+    "'". $next . "', ".
+    "'". $colonia . "', ".
+    "'". $ciudad . "', ".
+    "'". $edo . "', ".
+    "'". $cp . "')";
+
+  $mysqli->query($sql);
+}
+
 function sqlClose(){
   global $mysqli;
   $mysqli->close();
