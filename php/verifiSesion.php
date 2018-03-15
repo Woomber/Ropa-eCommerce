@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <?php
-	require('connect-bd-.php');
+	require('connect-bd.php');
 	if(comprobar($_POST['usuario'],$_POST['contrasena'])){
 		$_SESSION['loggedin'] = true;
     	$_SESSION['username'] = $_POST['usuario'];
@@ -13,6 +13,6 @@ session_start();
 
 	}
 	else{
-		header('Location: ../iniciarSesion.php');
+		header('Location: ../login.php');
 	}
 ?>
