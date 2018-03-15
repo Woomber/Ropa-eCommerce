@@ -1,6 +1,5 @@
 <?php
 
-
   $mysql_host = 'localhost';
   $mysql_user = 'id4661080_root';
   $mysql_pass = 'gatitos321';
@@ -43,7 +42,17 @@ function findByCategory($id){
   return $resultado;
 
 }
-
+function comprobar($usuario, $contrasena){
+  global $mysqli;
+  $sql = "SELECT Nombre_Usuario, Password FROM clientes 
+  WHERE Nombre_Usuario = '".$usuario."' AND Password ='".$contrasena."'";
+  $resultado = $mysqli->query($sql);
+  $row_cnt = $resultado->num_rows;
+  if($row_cnt==0){
+    return false;
+  }
+  else return $resultado->fetch_assoc();
+}
 function sqlClose(){
   global $mysqli;
   $mysqli->close();

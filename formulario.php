@@ -19,9 +19,9 @@
 		<div id="datosTodos">
 		<div class="datosUsuario">
 			<p>Usuario</p>
-			<input type="text" name="usuario">
+			<input type="text" name="usuario" required="required">
 			<p>Contraseña</p>
-			<input type="password" name="contrasena">
+			<input type="password" name="contrasena" required="required">
 		</div>
 		<div class="datosNombre">
 			<p>Nombres</p>
@@ -39,14 +39,14 @@
 		</div>
 		<div class="datosTarjeta">
 			<p>Targeta</p>
-			<input type="text" name="targeta" required="required" size="3">
-			<input type="text" name="targeta1" required="required" size="3">
-			<input type="text" name="targeta2" required="required" size="3">
-			<input type="text" name="targeta4" required="required" size="3">
+			<input  type=text name="targeta" required="required" size="3" maxlength = 4>
+			<input  type=text name="targeta1" required="required" size="3" maxlength = 4>
+			<input  type=text name="targeta2" required="required" size="3" maxlength = 4>
+			<input  type=text name="targeta4" required="required" size="3" maxlength = 4>
 			<p>CAV</p>
-			<input type="text" name="cav" required="required" size="2">
+			<input  type=text pattern="[0-9]" name="cav" required="required" size="2" maxlength = 3>
 			<p>Fecha de expiración</p>
-			<input type="text" name="fechaEx" required="required" size="4">
+			<input type="text" name="fechaEx" required="required" size="4" placeholder="mm/aa">
 		</div>
 		<button>Siguiente</button>
 		</div>

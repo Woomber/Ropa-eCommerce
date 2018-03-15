@@ -15,11 +15,14 @@
 
 </head>
 <body>
+    <form method="post" action="php/verifiSesion.php">
 	<div id="ingreso">
 		<p>Usuario</p>
-		<input type="text" name="usuario">
+		<input type="text" name="usuario" required="required">
 		<p>Contraseña</p>
-		<input type="password" name="contrasena">
+		<input type="password" name="contrasena" required="required">
+        <input type="submit" name="publicar" value="Ingresar">
 	</div>
+    </form>
 </body>
 </html>
