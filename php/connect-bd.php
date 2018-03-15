@@ -1,8 +1,8 @@
 <?php
 
-  $mysql_host = 'localhost';
-  $mysql_user = 'root';
-  $mysql_pass = '';
+  $mysql_host = 'den1.mysql1.gear.host';
+  $mysql_user = 'pellier';
+  $mysql_pass = 'Me4n0VUK0~-V';
   $mysql_bd   = 'pellier';
 
   $mysqli = new mysqli($mysql_host, $mysql_user, $mysql_pass, $mysql_bd);
