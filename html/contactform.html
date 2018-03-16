@@ -1,9 +1,8 @@
 <script src="js/contact.js"></script>
-<div id="contact">
   <form id="contact-form" method="post" action="php/contact-send.php"
   role="form" onsubmit="return validar()" >
     <div class="messages"></div>
-    <div class="controls">
+    <div class="nombres">
       <div class="row">
         <label for="form_name">Nombre *</label>
         <input id="form_name" type="text" name="name" class="form-control" placeholder="Nombre" required="required" data-error="Nombre obligatorio." />
@@ -19,17 +18,17 @@
         <input id="form_phone" type="text" name="phone" class="form-control" placeholder="Teléfono" type="tel" />
         <div class="help-block with-errors"></div>
       </div>
+      </div>
+      <div class="mensaje">
       <div class="row">
         <label for="form_message">Mensaje *</label>
-        <textarea id="form_message" name="message" rows=4 class="form-control" placeholder="Mensaje" required="required" data-error="Mensaje obligatorio." ></textarea>
+        <textarea id="form_message" name="message" rows=8 class="form-control" placeholder="Mensaje" required="required" data-error="Mensaje obligatorio." ></textarea>
         <div class="help-block with-errors"></div>
       </div>
-      <div class="row">
-        <input class="btn btn-success btn-send" type="submit" value="Enviar" />
-        <b>*</b> Obligatorio
+      <div class="buttonrow">
+        <input class="btn btn-send" type="submit" value="Enviar" />
         <div class="help-block with-errors"></div>
       </div>
 
     </div>
   </form>
-</div>

@@ -21,11 +21,10 @@
   <body>
     <?php include 'php/header.php' ?>
     <?php include 'html/menu.html' ?>
-
-    <h1 class="contact-title">Contacto</h1>
+    <div id="map"></div>
     <div class="contact-container">
-      <div id="map"></div>
-
+      
+<h1 class="contact-title">Contacto</h1>
       <?php include 'html/contactform.html' ?>
     </div>
     <?php include 'html/footer.html' ?>

@@ -1,38 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+body {
+   background-color: var(--color-bar);
+}
+
 #map {
-    width: 45%;
-    height: 380px;
+    width: 100%;
+    height: 350px;
+    margin-left: 0;
+    margin-right: 0;
     margin: auto;
     margin-top: 0px;
-}
-
-#contact{
-  display: flex;
-  margin: auto;
-  width: 45%;
-  margin-bottom: 64px;
-}
-
-
-@media screen and (max-width: 768px) {
-	#map {
-		width: 90%;
-	}
-
-	#contact {
-		padding-top: 20px;
-		width: 90%;
-	}
 }
 
 
 #contact-form {
   margin: auto;
-  width: 100%;
+  width: 95%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.nombres {
+  margin:auto;
+  margin-top: 0;
+  text-align: left;
+  width: 45%;
+}
+
+.mensaje {
+margin:auto;
+margin-top: 0;
+width: 40%;
+}
+
+.mensaje textarea {
+  height: 188px;
 }
 
 .contact-title {
   color: var(--color-main-dark);
-  margin-left: 24px;
+ 	font-size: 60px;
+  text-align: center;
+  margin-left: 20px;
+	font-family: 'Lobster', cursive;
+	margin-top: 10px;
+  margin-bottom: 8px;
+  width: 100%;
 }
 
 .contact-container {
@@ -41,15 +59,27 @@
   flex-wrap: wrap;
   align-items: stretch;
   align-content: flex-start;
-}
+    background-color: var(--color-bar);
+  color: var(--color-main-dark);
+  font-size: 20px;
+  }
 
 .btn {
-  margin-right: 12px;
+  width: auto;
+	margin-top: 15px;
+	margin-bottom: 25px;
+		background-color: var(--color-accent);
+   color: white;
+    padding: 3px 50px;
+    font-size: 20px;
+    margin-right: 0;
 }
 
-.controls .row {
-  margin: auto;
+.buttonrow {
+  width: 100%;
+  text-align: right;
 }
+
 
 .status {
   width: 30%;
