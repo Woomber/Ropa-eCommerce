@@ -54,3 +54,7 @@ body {
   width: 150px;
   height: 90px;
 }
+
+textarea {
+    resize: none;
+}
