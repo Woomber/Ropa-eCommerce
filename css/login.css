@@ -1,0 +1,47 @@
+
+#ingreso {
+    background-color: var(--color-main-dark);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+#ingreso h1 {
+    font-size: 36px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+.fas {
+    color:white;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.form-control {
+    display: inline-block;
+    width: 80%;
+    font-size: 20px;
+}
+
+.btn {
+    background-color: var(--color-accent);
+    color: white;
+    font-size: 20px;
+    margin-top: 8px;
+    padding: 3px 50px;
+}
+
+@media screen and (max-width: 768px){
+    #ingreso {
+        width: 90%;
+        margin-top: 20px;
+    }
+}

@@ -9,9 +9,10 @@ Colores
 
 :root {
   --color-main-dark: #7a4d66;
-  --color-background: #bca3ba;
+  --color-submenu: #875e75;
+  --color-background: #fcf3fa;
   --color-bar: #dec5dc;
-  --color-main-light:#90678c;
+  --color-main-light: #a18293;
   --color-accent: #1a9c99;
 
   --margin-horizontal: 2%;
@@ -23,9 +24,9 @@ body {
 }
 
 #imgCarousel {
-  margin: auto;
-  width: 95%;
-  height: 50%;
+  margin: 0;
+  width: 100%;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -43,7 +44,6 @@ body {
   text-align: center;
 }
 #articulos .contenido{
-  display: inline-block;
   float: left;
   width: 150px;
   height: 140px;

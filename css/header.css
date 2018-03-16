@@ -1,13 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
 .header {
   display: flex;
   flex-wrap: wrap;
+  background: var(--color-bar);
 }
 
 .title-head {
-  font-size: 60px;
-  font-family: serif;
+  font-size: 72px;
+  font-family: 'Berkshire Swash', cursive;
   padding-left: var(--margin-horizontal);
-  margin: 10px 0px 10px 0px;
+  margin-left:auto;
+  margin-right: -200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .title-head a {
@@ -37,11 +43,19 @@
   margin-top: auto;
   color: var(--color-accent);
   font-size: 20px;
+  font-weight: bold;
   padding-left: var(--margin-horizontal);
   padding-right: var(--margin-horizontal);
 }
 
+@media screen and (max-width: 600px){
+  .title-right {
+    margin-top:75px;
+  }
+}
+
+
 .title-right a {
-  color: white;
+  color: var(--color-main-dark);
   font-size: 16px;
 }

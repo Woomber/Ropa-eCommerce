@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css"/>
     <link rel="stylesheet" type="text/css" href="css/footer.css" />
     <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+     <link rel="stylesheet" type="text/css" href="css/register.css"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -26,6 +28,7 @@
     include("php/header.php");
     include("html/menu.html");
 
+    echo "<div class=\"formDatos\">";
     if(@$_POST["calle"]){
         require("php/register-form-3.php");
     }
@@ -34,9 +37,9 @@
 	} else {
 		require("php/register-form-1.php");
     }
+    echo "</div>";
     
-    //Descomentar cuando ya haya estilo para que no estorbe con el botón
-    //include("html/footer.html");
+    include("html/footer.html");
 	?>
 </body>
 </html>

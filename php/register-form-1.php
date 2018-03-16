@@ -1,41 +1,66 @@
 <h1 class="titulo-form">Paso 1: Datos personales</h1>
+<div class="progress">
+    <i class="fas fa-circle"></i>
+    <i class="far fa-circle"></i>
+    <i class="far fa-circle"></i>
+</div>
 <form method="POST" onsubmit="return validateForm1()">
     <div id="datosTodos">
         <div class="datosUsuario">
-            <p>Usuario *</p>
-            <input type="text" name="usuario" required="required">
-            <p>Contraseña *</p>
-            <input type="password" name="contrasena" required="required">
+            <div class="half-block first">
+                  <p>Usuario *</p>
+            <input type="text" class="form-control" placeholder="Usuario" name="usuario" required="required">
+            </div>
+            <div class="half-block last">
+                <p>Contraseña *</p>
+            <input type="password" class="form-control" placeholder="Contraseña" name="contrasena" required="required">
+            </div>     
         </div>
         <div class="datosNombre">
-            <p>Nombres *</p>
-            <input type="text" name="nombre" required="required">
+            <p>Nombre(s) *</p>
+            <input type="text" class="form-control" placeholder="Nombre(s)" name="nombre" required="required">
             <p>Apellido paterno *</p>
-            <input type="text" name="apellidoP" required="required">
+            <input type="text" class="form-control" placeholder="Apellido Paterno" name="apellidoP" required="required">
             <p>Apellido Materno *</p>
-            <input type="text" name="apellidoM" required="required">
+            <input type="text" class="form-control" placeholder="Apellido Materno" name="apellidoM" required="required">
         </div>
         <div class="datosEmail">
+              <div class="half-block first">
             <p>Email *</p>
-            <input type="text" name="email" required="required" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.com]+[.mx]">
-            <p>Confirmar email *</p>
-            <input type="text" name="confirmar" required="required" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.com]+[.mx]">
+            <input type="text" class="form-control" name="email" placeholder="Email" required="required" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.com]+[.mx]">
+              </div>
+            <div class="half-block last">
+            <p>Confirmar Email *</p>
+            <input type="text" class="form-control" name="confirmar" placeholder="Confirmar Email" required="required" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.com]+[.mx]">
+            </div>
         </div>
         <div class="datosTelefono">
             <p>Teléfono *</p>
-            <input type="text" name="telefono" required="required" pattern="[0-9]{7-10}" maxlength=10>
+            <input type="text" class="form-control" name="telefono" placeholder="Teléfono" required="required" pattern="[0-9]{7-10}" maxlength=10>
         </div>
         <div class="datosTarjeta">
-            <p>Tarjeta *</p>
-            <input type=text name="tarjeta1" required="required" size="3" pattern="[0-9]{4}" maxlength=4>
-            <input type=text name="tarjeta2" required="required" size="3" pattern="[0-9]{4}" maxlength=4>
-            <input type=text name="tarjeta3" required="required" size="3" pattern="[0-9]{4}" maxlength=4>
-            <input type=text name="tarjeta4" required="required" size="3" pattern="[0-9]{3,4}" maxlength=4>
-            <p>CVV *</p>
-            <input type=text pattern="[0-9]{3}" name="cav" required="required" size="2" maxlength=3>
-            <p>Fecha de expiración *</p>
-            <input type="text" name="fechaEx" required="required" pattern="[0-9]{2}/[0-9]{2}" size="5" maxlength="5" placeholder="mm/aa">
+            <div class="tarjeta-block first">
+ <p id="tarjeta-text">Tarjeta *</p>
+            <input type=text class="form-control form-tarjeta t1" name="tarjeta1" required="required" placeholder="0000" size="3" pattern="[0-9]{4}" maxlength=4>
+            <input type=text class="form-control form-tarjeta t1" name="tarjeta2" required="required" placeholder="0000" size="3" pattern="[0-9]{4}" maxlength=4>
+            <input type=text class="form-control form-tarjeta t1" name="tarjeta3" required="required" placeholder="0000" size="3" pattern="[0-9]{4}" maxlength=4>
+            <input type=text class="form-control form-tarjeta t1" name="tarjeta4" required="required" placeholder="0000" size="3" pattern="[0-9]{3,4}" maxlength=4>
+            
+            </div>
+            <div class="tarjeta-block">
+                  <p>CVV *</p>
+            <input type=text pattern="[0-9]{3}" class="form-control form-tarjeta" name="cav" required="required" size="2" maxlength=3 placeholder="CVV">
+            
+            </div>
+            <div class="tarjeta-block">
+                 <p>Fecha de expiración *</p>
+            <input type="text" class="form-control form-tarjeta" name="fechaEx" required="required" pattern="[0-9]{2}/[0-9]{2}" size="5" maxlength="5" placeholder="MM/YY">
+        
+            </div>
         </div>
-        <input type="submit" value="Siguiente" />
+        <div class="btnSubmit">
+             <input type="submit" class="btn btn-send" value="Siguiente" />
+        </div>
+       
     </div>
 </form>

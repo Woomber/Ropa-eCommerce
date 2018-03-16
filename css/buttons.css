@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -5,17 +7,21 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 40px;
-  background-color: var(--color-bar);
+  background-color: var(--color-background);
   margin-top: 0;
+  align-content: center;
+  align-items: center;
 }
 
 .tendencias {
   background-color: var(--color-main-dark);
   display: block;
   width: auto;
-  margin-top: 20px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  margin-top: 0px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 0;
 }
 
@@ -23,8 +29,7 @@
   color: white;
   padding-left: 25px;  width: 100%;
   padding-right: 25px;
-    margin-top:  0;
-  margin-bottom: 0;
+  margin:auto;
 }
 
 #imagen1 {
@@ -90,12 +95,15 @@
 .container{
   position: relative;
   box-sizing: border-box;
+  display: flex;
   margin: auto;
-  width: 250px;
-  height: 250px;
+  margin-top: 10px;
+  width: 240px;
+  height: 240px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  border: 2px solid var(--color-main-dark);
   cursor: pointer;
   overflow: hidden;
   margin-bottom:20px;
@@ -134,7 +142,7 @@
   text-align: center;
   position: absolute;
   margin: auto;
-  width: 200px;
+  width: 240px;
   height: 30px;
   line-height: 30px;
   left: 0;
