@@ -12,15 +12,18 @@
     $img = 'img/blusablanca.png';
 
     echo "
+        <div class='producto'>
         <div class='imagen'><img src='img/blusablanca.png'></div>
         <div class='contenido'>
             <div class='titulo'><h1 id='product-title'>$nombre</h1></div>
             <div class='marca'><p>Marca: $marca</p></div>
             <div class='descripcion'><p>Descripción: $desc</p></div>
             <div class='precio'><p>Precio: $$precio.00</p></div>
-            <button onclick=\"popup(1,'seguro')\">Comprar</button>
+            <button class='btn'>Comprar</button>
+        </div>
         </div>
     ";
+    //  <button class='btn' onclick=\"popup(1,'seguro')\">Comprar</button>
   }
 
   function buildByCategory($id){

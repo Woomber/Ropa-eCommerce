@@ -109,6 +109,10 @@
   margin-bottom:20px;
 }
 
+.container img {
+  	image-rendering: optimizeSpeed;
+}
+
 .container a {
   color: inherit;
   text-decoration: none;
