@@ -21,6 +21,9 @@ Colores
 
 body {
   background-color: var(--color-background);
+  background-image: url("../img/bg.png");
+  background-position: top center;
+  background-repeat: repeat;
 }
 
 #imgCarousel {
