@@ -8,8 +8,8 @@
     <div id="datosTodos">
         <div class="datosUsuario">
             <div class="half-block first">
-                  <p>Usuario *</p>
-            <input type="text" class="form-control" placeholder="Usuario" name="usuario" required="required">
+                  <p>Nombre de Usuario *</p>
+            <input type="text" class="form-control" placeholder="Nombre de Usuario" name="usuario" required="required">
             </div>
             <div class="half-block last">
                 <p>Contraseña *</p>

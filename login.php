@@ -34,9 +34,9 @@
 	<div id="ingreso">
         <h1>Iniciar sesión</h1>
 		<p><i class="fas fa-user"></i>
-		<input type="text" class="form-control" name="usuario" required="required">
+		<input type="text" class="form-control" placeholder="Nombre de Usuario" name="usuario" required="required">
 		<p><i class="fas fa-key"></i>
-		<input type="password" class="form-control" name="contrasena" required="required">
+		<input type="password" class="form-control" placeholder="Contraseña" name="contrasena" required="required">
         <p><input class="btn btn-send" type="submit" name="publicar" value="Ingresar">
 	</div>
     </form>
