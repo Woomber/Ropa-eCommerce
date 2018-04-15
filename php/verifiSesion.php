@@ -1,6 +1,8 @@
 <?php
-	require('connect-bd.php');
-	if(comprobar(
+	require('controllers/UsuarioController.php');
+	$controller = new UsuarioController;
+
+	if($controller->checkLogin(
 		$_POST['usuario'],
 		hash("sha256", $_POST['contrasena'])
 		)){

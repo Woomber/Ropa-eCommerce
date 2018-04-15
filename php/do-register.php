@@ -20,18 +20,19 @@
 
 <?php
 
-    require("connect-bd.php");
+     require("controllers/UsuarioController.php");
+     $controller = new UsuarioController;
 
     if(!@isset($_POST["usuario"])){
         header("Location: ../login.php");
     }
 
         try {
-    if(userExists($_POST["usuario"])){
+    if($controller->checkExists($_POST["usuario"])){
         throw new Exception("Ese usuario ya existe :c");
     }
 
-    if(sendClientInfo(
+    if($controller->sendClientInfo(
         $_POST["usuario"],
         hash("sha256", $_POST["contrasena"]),
         $_POST["nombre"],
@@ -44,7 +45,7 @@
         ($_POST["tipoPersona"] == "fisica")? 1 : 0
     ) == false) throw new Exception("Error de conexión con la base de datos.");
     
-    if(sendCCInfo(
+    if($controller->sendCCInfo(
         $_POST["usuario"],
         $_POST["tarjeta1"] . $_POST["tarjeta2"] . $_POST["tarjeta3"] . $_POST["tarjeta4"],
         $_POST["cav"],
@@ -53,7 +54,7 @@
      ) == false) throw new Exception("Error de conexión con la base de datos.");
 
     if(isset($_POST["calleF"])){
-        if(sendDireccionInfo(
+        if($controller->sendDireccionInfo(
             $_POST["usuario"],
             0,
             $_POST["calle"],
@@ -64,7 +65,7 @@
             $_POST["estado"],
             $_POST["cp"]
         ) == false) throw new Exception("Error de conexión con la base de datos.");
-        if(sendDireccionInfo(
+        if($controller->sendDireccionInfo(
             $_POST["usuario"],
             1,
             $_POST["calleF"],
@@ -77,7 +78,7 @@
         ) == false) throw new Exception("Error de conexión con la base de datos.");
         
     } else {
-        if(sendDireccionInfo(
+        if($controller->sendDireccionInfo(
             $_POST["usuario"],
             true,
             $_POST["calle"],
@@ -89,8 +90,6 @@
             $_POST["cp"]
          ) == false) throw new Exception("Error de conexión con la base de datos.");
     }
-
-    sqlClose();
     
 ?>
     <div class="status">

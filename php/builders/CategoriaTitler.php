@@ -1,17 +1,5 @@
 <?php
 
-if(isset($_GET["cat"])){
-  $cat = $_GET["cat"];
-} else {
-  $cat = 0;
-}
-
-if(isset($_GET["typ"])){
-  $typ = $_GET["typ"];
-} else {
-  $typ = 0;
-}
-
 switch($cat) {
   case 1:
     $cat_title = "Temporada";
@@ -75,3 +63,5 @@ switch($cat){
 
 
 ?>
+
+ <h1 id="category-title"><?php echo $cat_title; ?></h1>

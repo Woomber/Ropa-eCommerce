@@ -20,16 +20,8 @@
   <body>
     <?php include 'php/header.php' ?>
     <?php include 'html/menu.html' ?>
-    <?php require 'php/productos-filter.php' ?>
 
-    <h1 id="category-title"><?php echo $cat_title; ?></h1>
-
-        <div id="productos">
-            <?php
-              require 'php/build-product.php';
-              buildByCategory($cat);
-             ?>
-        </div>
+    <?php require 'php/builders/CategoriaBuilder.php'?>
 
     <?php include 'html/footer.html' ?>
   </body>

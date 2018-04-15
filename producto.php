@@ -20,13 +20,9 @@
   <body>
     <?php include 'php/header.php' ?>
     <?php include 'html/menu.html' ?>
-    <?php require 'php/producto-individual-filter.php' ?>
     <?php include 'html/emergentes.html' ?>
 
-    <?php
-    require 'php/build-product.php';
-    buildByProduct($prod_id);
-    ?>
+    <?php require 'php/builders/ProductoBuilder.php'?>
 
     <?php include 'html/footer.html' ?>
   </body>
