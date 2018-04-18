@@ -11,7 +11,11 @@ class CategoriaController extends Controller {
         "nombre_p"  => "nombre",
         "desc" => "descripcion",
         "precio" => "precio",
-        "marca" => "marca"
+        "marca" => "marca",
+         "imagen" => "imagen",
+        "ancho" => "anchoImagen",
+        "alto" => "altoImagen",
+        "tipo" => "tipoImagen"
     );
 
     public function getById($id){
@@ -29,19 +33,26 @@ class CategoriaController extends Controller {
         else $this->status = 404;
 
         $categoria = new Categoria;
-        $producto = new Producto;
 
-        if($fila = $result->fetch_array()){
+        while($fila = $result->fetch_array()){
             $categoria->set(
                 $fila[$this->fields["id"]],
                 $fila[$this->fields["nombre"]]
             );
+            $producto = new Producto;
             $producto->set(
                 $fila[$this->fields["id_p"]],
                 $fila[$this->fields["nombre_p"]],
                 $fila[$this->fields["desc"]],
                 $fila[$this->fields["precio"]],
                 $fila[$this->fields["marca"]]
+            );
+              $producto->imagen = new Imagen();
+            $producto->imagen->set(
+                $fila[$this->fields["imagen"]],
+                $fila[$this->fields["alto"]],
+                $fila[$this->fields["ancho"]],
+                $fila[$this->fields["tipo"]]
             );
             $categoria->addProducto($producto);
         }

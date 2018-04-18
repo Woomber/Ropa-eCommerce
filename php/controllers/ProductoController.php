@@ -9,7 +9,11 @@ class ProductoController extends Controller {
         "nombre"  => "nombre",
         "desc" => "descripcion",
         "precio" => "precio",
-        "marca" => "marca"
+        "marca" => "marca",
+        "imagen" => "imagen",
+        "ancho" => "anchoImagen",
+        "alto" => "altoImagen",
+        "tipo" => "tipoImagen"
     );
 
     public function getById($id){
@@ -34,6 +38,13 @@ class ProductoController extends Controller {
                 $fila[$this->fields["desc"]],
                 $fila[$this->fields["precio"]],
                 $fila[$this->fields["marca"]]
+            );
+            $producto->imagen = new Imagen();
+            $producto->imagen->set(
+                $fila[$this->fields["imagen"]],
+                $fila[$this->fields["alto"]],
+                $fila[$this->fields["ancho"]],
+                $fila[$this->fields["tipo"]]
             );
         }
         

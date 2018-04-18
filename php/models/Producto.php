@@ -34,7 +34,7 @@ class Producto {
     }
 
     public function getImagen(){
-        return "img/blusablanca.png";
+        return $this->imagen->getUri();
     }
 }
 

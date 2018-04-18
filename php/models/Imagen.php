@@ -12,6 +12,10 @@ class Imagen {
         $this->ancho = $ancho;
         $this->tipo = $tipo;
     }
+
+    public function getUri(){
+        return ("data:" . $this->tipo . ";base64," . base64_encode($this->imagen));
+    }
 }
 
 ?>
